@@ -14,7 +14,7 @@ def run():
             print("The only remaining word(s) are: " + str(validWords))
             break
         if(len(validWords) > 100):
-            word = findBestWord(totalWords, validWords, rules)
+            word = findBestWord(validWords + totalWords, validWords, rules)
         else:
             word = findBestWord(validWords, validWords, rules)
         if(len(validWords) < 25):
